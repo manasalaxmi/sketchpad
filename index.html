@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
-
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
-    <script src="script.js" defer></script>
-    <title>Etch-a-Sketch</title>
+  <meta charset="UTF-8">
+  <title>Etch-a-Sketch</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 </head>
-
 <body>
-    <div id="menu">
-        <div id="selectLabel" >Palette</div>
-        <input id="selectGrid"></input>
-        <div id="dimension"></div>
-        <div id="colorPalette"></div>
+  <div id="menu">
+    <div id="selectLabel">Palette</div>
+    <input id="selectGrid" type="range" min="1" max="240" value="16">
+    <div id="dimension">16 X 16</div>
+    <div id="colorPalette"></div>
 
-        <button id="newCanvas">New Canvas</button>
-        <button id="eraserToggle">Eraser: Off</button>
-        <button id="saveCanvas">Save</button> 
+    <button id="newCanvas">New Canvas</button>
+    <button id="eraserToggle">Eraser: Off</button>
+    <button id="saveCanvas">Save</button>
+  </div>
 
-
-    </div>
-    <div id="boxContainer"></div><!-- Load html2canvas from CDN -->
-<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-
-
+  <div id="boxContainer"></div>
 </body>
-
 </html>
