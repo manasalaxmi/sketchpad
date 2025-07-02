@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+    <title>Etch-a-Sketch</title>
+</head>
+
+<body>
+    <div id="menu">
+        <div id="selectLabel" >Palette</div>
+        <input id="selectGrid"></input>
+        <div id="dimension"></div>
+        <div id="colorPalette"></div>
+
+        <button id="newCanvas">New Canvas</button>
+        <button id="eraserToggle">Eraser: Off</button>
+        <button id="saveCanvas">Save</button> 
+
+
+    </div>
+    <div id="boxContainer"></div><!-- Load html2canvas from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+
+</body>
+
+</html>
